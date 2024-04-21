@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.22.0 (2024.04.21)
+* same applies to Mac as to Windows
+
 ## 0.16.1 (May 23, 2022)
 * bug fix - remove previously introduced keybindings for ctrl+f (cmd+f) [#60](https://github.com/alphabotsec/vscode-eclipse-keybindings/issues/60).
 

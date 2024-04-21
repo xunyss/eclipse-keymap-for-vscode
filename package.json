@@ -1,5 +1,5 @@
 {
-    "name": "vscode-eclipse-keybindings",
+    "name": "eclipse-keymap-for-vscode",
     "displayName": "Eclipse Keymap",
     "description": "Eclipse keybindings for Visual Studio Code",
     "version": "0.16.0",
@@ -14,7 +14,7 @@
         "keybindings",
         "keymap"
     ],
-    "icon": "vscode-eclipse-keybindings.png",
+    "icon": "eclipse-keymap-for-vscode.png",
     "repository": {
         "type": "git",
         "url": "https://github.com/alphabotsec/vscode-eclipse-keybindings.git"
