@@ -6,7 +6,9 @@ Eclipse key bindings are provided for Windows, Linux and macOS.
 
 ## What key bindings are included?
 
-The key bindings consist of general shortcuts like `Ctrl-Shift-R`, `Ctrl-3`, text editor keybindings like `Ctrl-Shift-F`, `Ctrl-L` and debugging key bindings like  `F8`, `Ctrl-Shift-B`.
+The key bindings consist of general shortcuts like `Ctrl-Shift-R`, `Ctrl-3`,
+text editor keybindings like `Ctrl-Shift-F`, `Ctrl-L` and
+debugging key bindings like  `F8`, `Ctrl-Shift-B`.
 
 For a full list of the 60+ key bindings have a look at the extension's contribution list. 
 
@@ -16,15 +18,14 @@ For a full list of the 60+ key bindings have a look at the extension's contribut
 
 We may have missed a keyboard shortcut. If we did please help us out! It is very easy to make a PR. 
 
-1. Head over to our [GitHub repository](https://github.com/alphabotsec/vscode-eclipse-keybindings). 
-2. Open the [`package.json` file](https://github.com/alphabotsec/vscode-eclipse-keybindings/blob/master/package.json). 
-3. Add a JSON object to [`contributes.keybindings`](https://github.com/alphabotsec/vscode-eclipse-keybindings/blob/master/package.json). 
+1. Head over to our [GitHub repository](https://github.com/xunyss/eclipse-keymap-for-vscode/). 
+2. Open the [`package.json` file](https://github.com/xunyss/eclipse-keymap-for-vscode/blob/master/package.json). 
+3. Add a JSON object to [`contributes.keybindings`](https://github.com/xunyss/eclipse-keymap-for-vscode/blob/master/package.json). 
 4. Open a pull request.
 
 ### Contributors
 
- * Special thanks to [Shi Chen](https://github.com/CsCherrYY)!
- * Thanks to all the [contributors](https://github.com/alphabotsec/vscode-eclipse-keybindings/graphs/contributors)!
+ * Thanks to all the [contributors](https://github.com/xunyss/eclipse-keymap-for-vscode/graphs/contributors)!
 
 ## License
 [MIT](LICENSE.md)

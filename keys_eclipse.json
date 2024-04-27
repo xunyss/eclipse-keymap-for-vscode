@@ -1,87 +1,6 @@
 {
-    "name": "eclipse-keymap-for-vscode",
-    "displayName": "Eclipse Keymap",
-    "description": "Eclipse keybindings for Visual Studio Code",
-    "version": "0.20.0",
-    "publisher": "xunyss",
-    "engines": {
-        "vscode": "^1.88.1"
-    },
-    "categories": [
-        "Keymaps"
-    ],
-    "keywords": [
-        "keybindings", "keymap", "eclipse", "windows"
-    ],
-    "icon": "eclipse-keymap-for-vscode.png",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/xunyss/eclipse-keymap-for-vscode.git"
-    },
-    "bugs": {
-        "url": "https://github.com/xunyss/eclipse-keymap-for-vscode/issues"
-    },
-    "homepage": "https://xunyss.github.io/eclipse-keymap-for-vscode/",
     "contributes": {
         "keybindings": [
-            {   "key": "ctrl+c",                "command": "execCopy"                                   },
-            {   "key": "ctrl+c",                "command": "editor.action.clipboardCopyAction"          },
-            {   "key": "ctrl+c",                "command": "keybindings.editor.copyKeybindingEntry",    "when": "inKeybindings && keybindingFocus && !whenFocus" },
-            {   "key": "ctrl+c",                "command": "problems.action.copy",                      "when": "problemsVisibility && !relatedInformationFocus && focusedView == 'workbench.panel.markers.view'" },
-            {   "key": "ctrl+c",                "command": "search.action.copyMatch",                   "when": "fileMatchOrMatchFocus" },
-            {   "key": "ctrl+c",                "command": "workbench.action.terminal.copySelection",   "when": "terminalTextSelectedInFocused || terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected || terminalFocus && terminalTextSelected && terminalTextSelectedInFocused || terminalHasBeenCreated && terminalTextSelected && terminalTextSelectedInFocused || terminalProcessSupported && terminalTextSelected && terminalTextSelectedInFocused" },
-            {   "key": "ctrl+c",                "command": "filesExplorer.copy",                        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !inputFocus" },
-            {   "key": "ctrl+c",                "command": "remote.tunnel.copyAddressInline",           "when": "tunnelViewFocus && tunnelType == 'Detected' && tunnelViewMultiSelection == 'undefined' || tunnelViewFocus && tunnelType == 'Forwarded' && tunnelViewMultiSelection == 'undefined'" },
-            {   "key": "ctrl+v",                "command": "execPaste"                                  },
-            {   "key": "ctrl+v",                "command": "editor.action.clipboardPasteAction"         },
-            {   "key": "ctrl+v",                "command": "workbench.action.terminal.paste",           "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported" },
-            {   "key": "ctrl+v",                "command": "filesExplorer.paste",                       "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus" },
-            {   "key": "ctrl+x",                "command": "execCut"                                    },
-            {   "key": "ctrl+x",                "command": "editor.action.clipboardCutAction"           },
-            {   "key": "ctrl+x",                "command": "filesExplorer.cut",                         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus" },
-            {   "key": "ctrl+z",                "command": "undo"                                       },
-            {   "key": "ctrl+z",                "command": "inlineChat.unstash",                        "when": "inlineChatHasStashedSession && !editorReadonly" },
-            {   "key": "ctrl+y",                "command": "redo"                                       },
-
-            {   "key": "ctrl+a",                "command": "editor.action.selectAll"                    },
-            {   "key": "ctrl+a",                "command": "list.selectAll",                            "when": "listFocus && listSupportsMultiselect && !inputFocus && !treestickyScrollFocused" },
-            {   "key": "ctrl+a",                "command": "workbench.action.terminal.selectAll",       "when": "terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported" },
-            {   "key": "ctrl+a",                "command": "notebook.cell.output.selectAll",            "when": "notebookEditorFocused && notebookOutputFocused" },
-            {   "key": "ctrl+s",                "command": "workbench.action.files.save"                },
-            {   "key": "ctrl+shift+s",          "command": "workbench.action.files.saveAs"              },
-            {   "key": "ctrl+shift+s",          "command": "workbench.action.files.saveLocalFile",      "when": "remoteFileDialogVisible" },
-            {   "key": "ctrl+f",                "command": "actions.find",                              "when": "editorFocus || editorIsOpen" },
-            {   "key": "ctrl+f",                "command": "editor.action.extensioneditor.showfind",    "when": "!editorFocus && activeEditor == 'workbench.editor.extension'" },
-            {   "key": "ctrl+f",                "command": "editor.action.webvieweditor.showFind",      "when": "webviewFindWidgetEnabled && !editorFocus && activeEditor == 'WebviewEditor'" },
-            {   "key": "ctrl+f",                "command": "repl.action.filter",                        "when": "inDebugRepl && textInputFocus" },
-            {   "key": "ctrl+f",                "command": "settings.action.search",                    "when": "inSettingsEditor" },
-            {   "key": "ctrl+f",                "command": "commentsFocusFilter",                       "when": "focusedView == 'workbench.panel.comments'" },
-            {   "key": "ctrl+f",                "command": "keybindings.editor.searchKeybindings",      "when": "inKeybindings" },
-            {   "key": "ctrl+f",                "command": "list.find",                                 "when": "listFocus && listSupportsFind" },
-            {   "key": "ctrl+f",                "command": "notebook.find",                             "when": "notebookEditorFocused && !editorFocus && activeEditor == 'workbench.editor.interactive' || notebookEditorFocused && !editorFocus && activeEditor == 'workbench.editor.notebook'" },
-            {   "key": "ctrl+f",                "command": "problems.action.focusFilter",               "when": "focusedView == 'workbench.panel.markers.view'" },
-            {   "key": "ctrl+f",                "command": "workbench.action.terminal.focusFind",       "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported" },
-            {   "key": "ctrl+h",                "command": "editor.action.startFindReplaceAction",      "when": "editorFocus || editorIsOpen" },
-
-            {   "key": "ctrl+left",             "command": "cursorWordLeft",                            "when": "textInputFocus && !accessibilityModeEnabled" },
-            {   "key": "ctrl+shift+left",       "command": "cursorWordLeftSelect",                      "when": "textInputFocus && !accessibilityModeEnabled" },
-            {   "key": "ctrl+right",            "command": "cursorWordEndRight",                        "when": "textInputFocus && !accessibilityModeEnabled" },
-            {   "key": "ctrl+shift+right",      "command": "cursorWordEndRightSelect",                  "when": "textInputFocus && !accessibilityModeEnabled" },
-            {   "key": "ctrl+up",               "command": "scrollLineUp",                              "when": "textInputFocus" },
-            {   "key": "ctrl+down",             "command": "scrollLineDown",                            "when": "textInputFocus" },
-            {   "key": "ctrl+home",             "command": "cursorTop",                                 "when": "textInputFocus" },
-            {   "key": "ctrl+home",             "command": "notebook.focusTop",                         "when": "notebookEditorFocused && !inputFocus" },
-            {   "key": "ctrl+end",              "command": "cursorBottom",                              "when": "textInputFocus" },
-            {   "key": "ctrl+end",              "command": "notebook.focusBottom",                      "when": "notebookEditorFocused && !inputFocus" },
-
-            {   "key": "f2",                    "command": "editor.action.rename",                      "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly" },
-            {   "key": "f2",                    "command": "workbench.action.terminal.renameActiveTab", "when": "terminalHasBeenCreated && terminalTabsFocus && terminalTabsSingularSelection || terminalProcessSupported && terminalTabsFocus && terminalTabsSingularSelection" },
-            {   "key": "f2",                    "command": "debug.renameWatchExpression",               "when": "watchExpressionsFocused" },
-            {   "key": "f2",                    "command": "debug.setVariable",                         "when": "variablesFocused" },
-            {   "key": "f2",                    "command": "remote.tunnel.label",                       "when": "tunnelViewFocus && tunnelType == 'Forwarded' && tunnelViewMultiSelection == 'undefined'" },
-            {   "key": "f2",                    "command": "renameFile",                                "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus" },
-
-
             {
                 "key": "ctrl+3",
                 "command": "workbench.action.showCommands"
@@ -466,8 +385,5 @@
                 "when": "editorTextFocus"
             }
         ]
-    },
-    "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install"
     }
 }
